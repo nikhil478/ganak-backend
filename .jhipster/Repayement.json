@@ -1,0 +1,48 @@
+{
+    "name": "Repayement",
+    "fields": [
+        {
+            "fieldName": "repayementAmount",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "zkpCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdById",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateUpdated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updatedById",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "loan",
+            "otherEntityRelationshipName": "repayement",
+            "javadoc": "Another side of the same relationship",
+            "relationshipName": "repayement",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20230915134705",
+    "entityTableName": "repayement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

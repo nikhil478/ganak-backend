@@ -1,0 +1,63 @@
+{
+    "name": "Agreement",
+    "fields": [
+        {
+            "fieldName": "fintechName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "agreementDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fldgPerecentage",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "guaranteeType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "guaranteeDetails",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "agreementNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdById",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateUpdated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updatedById",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "loan",
+            "otherEntityRelationshipName": "agreement",
+            "javadoc": "A relationship",
+            "relationshipName": "loan"
+        }
+    ],
+    "changelogDate": "20230915134706",
+    "entityTableName": "agreement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

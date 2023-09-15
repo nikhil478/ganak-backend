@@ -1,0 +1,82 @@
+{
+    "name": "Loan",
+    "fields": [
+        {
+            "fieldName": "loaneeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dob",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contact",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "disbursementDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "loanAmount",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "loanTenure",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "interestRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "zkpCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdById",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateUpdated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updatedById",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "repayement",
+            "otherEntityRelationshipName": "repayement",
+            "relationshipName": "repayement"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "agreement",
+            "otherEntityRelationshipName": "loan",
+            "javadoc": "Another side of the same relationship",
+            "relationshipName": "agreement",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20230915134707",
+    "entityTableName": "loan",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
